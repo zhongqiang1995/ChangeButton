@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChangeButton">
+        <attr name="isShowShadow" format="boolean" />
+        <attr name="strokeSize" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="bgColor" format="color" />
+        <attr name="bgPressColor" format="color" />
+        <attr name="bgDisabledColor" format="color" />
+        <attr name="round" format="dimension" />
+        <attr name="topLeftRound" format="dimension" />
+        <attr name="topRightRound" format="dimension" />
+        <attr name="bottomLeftRound" format="dimension" />
+        <attr name="bottomRightRound" format="dimension" />
+        <attr name="bgGradientStartColor" format="color" />
+        <attr name="bgGradientEndColor" format="color" />
+        <attr name="bgGradientDisabledStartColor" format="color" />
+        <attr name="bgGradientDisabledEndColor" format="color" />
+        <attr name="bgGradientPressStartColor" format="color" />
+        <attr name="bgGradientPressEndColor" format="color" />
+        <attr name="isClickRipple" format="boolean" />
+        <attr name="gradientStyle" format="enum">
+            <enum name="linear" value="1" />
+            <enum name="radial" value="2" />
+            <enum name="sweep" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

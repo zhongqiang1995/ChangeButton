@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.zqi.lib.bt.ChangeButton
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="默认样式"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+        <com.zqi.lib.bt.ChangeButton
+                android:textColor="#ffffff"
+                android:text="默认样式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="BUTTON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:isClickRipple="false"
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="点击无波纹"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:round="20dp"
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="圆角"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:isShowShadow="false"
+                app:strokeSize="4dp"
+                app:strokeColor="#000000"
+                app:round="20dp"
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="圆角描边"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <com.zqi.lib.bt.ChangeButton
+                app:strokeSize="4dp"
+                app:strokeColor="#ff0000"
+                app:round="20dp"
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="圆角描边"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <com.zqi.lib.bt.ChangeButton
+                app:topRightRound="5dp"
+                app:bottomRightRound="30dp"
+                app:topLeftRound="10dp"
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="四个圆角不同"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:isShowShadow="false"
+                app:bgColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="没有阴影"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:bgGradientStartColor="@color/colorPrimary"
+                app:bgGradientEndColor="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:text="线性渐变"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:gradientStyle="radial"
+                app:bgGradientStartColor="@color/colorPrimary"
+                app:bgGradientEndColor="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:text="圆形渐变 点击无波纹"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.zqi.lib.bt.ChangeButton
+                app:gradientStyle="sweep"
+                app:bgGradientStartColor="@color/colorPrimary"
+                app:bgGradientEndColor="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:text="扇形渐变"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
