@@ -455,15 +455,15 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyle: Int = 0) :
 
 
         var diff = 0f
-        if (strokeSize != 0f
-            && (bottomLeftRadioSize != 0f
-                    || bottomRightRadioSize != 0f
-                    || topLeftRadioSize != 0f
-                    || topRightRadioSize != 0f)
-        ) {
-            //解决在圆角比较大的时候描边线条会向内偏移
-            diff = strokeSize / 2.45f
-        }
+//        if (strokeSize != 0f
+//            && (bottomLeftRadioSize != 0f
+//                    || bottomRightRadioSize != 0f
+//                    || topLeftRadioSize != 0f
+//                    || topRightRadioSize != 0f)
+//        ) {
+//            //解决在圆角比较大的时候描边线条会向内偏移
+//            diff = strokeSize / 2.45f
+//        }
         rectStroke = RectF(
             paddingLeft.toFloat() + diff + shadowWidth,
             paddingTop.toFloat() + diff + shadowWidth,
