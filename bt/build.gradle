@@ -1,10 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
 android {
+
     compileSdkVersion 28
-
-
-
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 28
@@ -31,4 +30,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+publish{
+    repoName="android_maven"
+    userOrg="hsly"
+    groupId="com.zq.lib"
+    artifactId = 'change-button'
+    publishVersion = '1.0.0'
+    desc = 'Android Button可以设置不同的样式，可以添加描边、渐变、圆角、阴影、点击效果，自动生成不同效果的颜色。'
+    website = 'https://github.com/zhongqiang1995/ChangeButton'
+
 }

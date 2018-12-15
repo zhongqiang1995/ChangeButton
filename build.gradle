@@ -9,11 +9,19 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-
+        classpath 'com.novoda:bintray-release:0.8.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+//ext {
+//    userOrg = 'hsly'
+//    repoName = "android_maven"
+//    groupId = 'com.zq.lib'
+//    desc = 'Android Button可以设置不同的样式，可以添加描边、渐变、圆角、阴影、点击效果，自动生成不同效果的颜色。'
+//    website = 'https://github.com/zhongqiang1995/ChangeButton'
+//    licences = ['Apache-2.0']
+//}
 
 allprojects {
     repositories {
